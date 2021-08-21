@@ -8,6 +8,48 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <!-- Header -->
+  <header class="header">
+    <h1>To-Do</h1>
+  </header>
+
+  <!-- Search & Sort -->
+  <div class="actions">
+    <input type="text" id="serch-text" class="input" placeholder="Search notes"/>
+    <select id="filter-by" class="dropdown">
+      <option value="byEdited">Sort by last edited</option>
+        <option value="byCreated">Sort by recently created</option>
+        <option value="alphabetical">Sort by alphabet</option>
+    </select>
+  </div>
+
+  <div class="container">
+
+    <!-- calender -->
+    <div class="calender">
+      <div class="cld-title">
+        <span class="month-num"></span>
+        <span class="month-string"></span>
+      </div>
+      <div class="cld-group">
+        <ul id="day">
+          <li><a href="#">S</a></li>
+          <li><a href="#">M</a></li>
+          <li><a href="#">T</a></li>
+          <li><a href="#">W</a></li>
+          <li><a href="#">T</a></li>
+          <li><a href="#">F</a></li>
+          <li><a href="#">S</a></li>
+        </ul>
+        <ul id="days"></ul>
+      </div>
+
+      <!-- create button -->
+      <button id="create-note" class="button">Create Note</button>
+    </div>
+
+    <!-- note list -->
+    <div id="notes"></div>
+  </div>
 </body>
 </html>
