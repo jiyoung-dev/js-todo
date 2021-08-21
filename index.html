@@ -25,21 +25,21 @@
 
   <div class="container">
 
-    <!-- calender -->
-    <div class="calender">
+    <!-- calendar -->
+    <div class="calendar">
       <div class="cld-title">
         <span class="month-num"></span>
         <span class="month-string"></span>
       </div>
       <div class="cld-group">
         <ul id="day">
-          <li><a href="#">S</a></li>
-          <li><a href="#">M</a></li>
-          <li><a href="#">T</a></li>
-          <li><a href="#">W</a></li>
-          <li><a href="#">T</a></li>
-          <li><a href="#">F</a></li>
-          <li><a href="#">S</a></li>
+          <li><a href="#">Sun</a></li>
+          <li><a href="#">Mon</a></li>
+          <li><a href="#">Tue</a></li>
+          <li><a href="#">Wed</a></li>
+          <li><a href="#">Thu</a></li>
+          <li><a href="#">Fri</a></li>
+          <li><a href="#">Sat</a></li>
         </ul>
         <ul id="days"></ul>
       </div>
@@ -51,5 +51,12 @@
     <!-- note list -->
     <div id="notes"></div>
   </div>
+
+  <script src="js/calendar.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      calendar.init();
+    });
+  </script>
 </body>
 </html>
